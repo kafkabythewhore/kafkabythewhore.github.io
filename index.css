@@ -1,0 +1,122 @@
+body {
+    background: url("./imgs/bg.jpg");
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "Exposure30";
+    src: url("./font/ExposureTrial[-30].otf");
+}
+
+div {
+    font-family: "Exposure30";
+    font-weight: 397;
+    color: #0B60AA;
+}
+
+.flex {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    
+}
+li {
+    list-style: none;
+}
+
+:root {
+    --s: 5;
+    --h: 18;
+    --speed: 2s;
+}
+  
+.g-container {
+    width: 183px;
+    height: 18px;
+    line-height: calc(var(--h) * 1px);
+    color: #0B60AA;
+    overflow: hidden;
+}
+
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+ul li {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul {
+    animation: move calc(var(--speed) * var(--s)) steps(var(--s)) infinite;
+}
+
+ul li {
+    white-space: nowrap;
+    cursor: pointer;
+    animation: liMove calc(var(--speed)) infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, calc(var(--s) * var(--h) * -1px));
+    }
+}
+
+@keyframes liMove {
+    0% {
+        transform: translate(0, 0);
+    }
+    80%,
+    100%  {
+        transform: translate(0, calc(var(--h) * -1px));
+    }
+}
+
+.text {
+    width: 50vw;
+    padding-top: 30vh;
+    padding-left:4.2vw;
+}
+
+.text2 {
+    width: 50vw;
+    padding-top: 5vh;
+    padding-left:4.2vw;
+}
+
+#t {
+    color: transparent;
+    -webkit-text-stroke: #0B60AA 1px;
+}
+
+span {
+    color: rgb(200, 134, 134);
+}
+
+a:link{
+    color: #0B60AA;
+    text-decoration: none;
+}
+a:visited{
+    color: #0B60AA;
+    text-decoration: none;
+}
+a:hover{
+    color: #0B60AA;
+    text-decoration: none;
+}
+a:focus{
+    color: #0B60AA;
+    text-decoration: none;
+}
+a:active{
+    color: #0B60AA;
+    text-decoration: none;
+}
