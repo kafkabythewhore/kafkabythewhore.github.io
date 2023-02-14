@@ -3,6 +3,27 @@ body {
     background-size: cover;
 }
 
+@media only screen and (max-width: 900px) {
+    body {
+        background: #0B60AA;
+    }
+    div:not(.media) {
+        display: none;
+    }
+    .media {
+        display: block;
+    }
+}
+
+.media {
+    font-family: "Exposure30";
+    font-weight: 397;
+    color: white;
+    display: none;
+    position: absolute;
+    top: 10px;
+}
+
 @font-face {
     font-family: "Exposure30";
     src: url("./font/ExposureTrial[-30].otf");
