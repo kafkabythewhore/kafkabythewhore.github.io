@@ -79,16 +79,29 @@ ul li {
     }
 }
 
+#heartgif {
+    margin: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
 .text {
     width: 50vw;
-    padding-top: 30vh;
-    padding-left:4.2vw;
+    padding-top: 40vh;
+    padding-left:50px;
+}
+
+.t {
+    width: fit-content;
+    margin-left:50px;
 }
 
 .text2 {
     width: 50vw;
     padding-top: 5vh;
-    padding-left:4.2vw;
+    padding-left: 50px;
 }
 
 #t {
@@ -96,8 +109,229 @@ ul li {
     -webkit-text-stroke: #0B60AA 1px;
 }
 
-span {
+.offtext {
     color: rgb(200, 134, 134);
+}
+
+/* match */
+.m1 {
+    width: 250px;
+    height:auto;
+    z-index: 10;
+    left: 45vw;
+    top: 150px;
+    position: absolute;
+}
+
+.m2 {
+    width: 400px;
+    height: auto;
+    z-index: 10;
+    left: 65vw;
+    top: 200px;
+    position: absolute;
+}
+
+.matchtext {
+    z-index: 10;
+}
+
+.match {
+    display: none;
+}
+
+.matchtext:hover {
+    background-color: #0B60AA;
+    color: white;
+}
+
+.matchtext:hover ~ .match {
+    display: block;
+}
+
+/* first meet */
+.stmeet2 {
+    width: 300px;
+    height:auto;
+    z-index: 10;
+    left: 45vw;
+    top: 210px;
+    position: absolute;
+}
+
+.stmeet1 {
+    width: 250px;
+    height:auto;
+    z-index: 9;
+    left: 65vw;
+    top: 150px;
+    position: absolute;
+}
+
+.stmeet3 {
+    width: 250px;
+    height:auto;
+    z-index: 10;
+    left: 80vw;
+    top: 400px;
+    position: absolute;
+}
+
+.stmeet {
+    display: none;
+}
+
+.stmeettext {
+    z-index:10;
+}
+
+.stmeettext:hover {
+    background-color: #0B60AA;
+    color: white;
+}
+
+.stmeettext:hover ~ .stmeet {
+    display: block;
+}
+
+/* last day in vn */
+.lastday1 {
+    width: 300px;
+    height:auto;
+    z-index: 10;
+    left: 40vw;
+    top: 170px;
+    position: absolute;
+}
+
+.lastday2 {
+    width: 250px;
+    height:auto;
+    z-index: 10;
+    left: 53vw;
+    top: 100px;
+    position: absolute;
+}
+
+.lastday3 {
+    width: 400px;
+    height:auto;
+    z-index: 10;
+    left: 70vw;
+    top: 150px;
+    position: absolute;
+}
+
+.lastday {
+    display:none;
+}
+
+.lastdaytext:hover {
+    background-color: #0B60AA;
+    color: white;
+}
+
+.lastdaytext:hover ~ .lastday {
+    display: block;
+}
+
+/* fight */
+
+.meme {
+    width: 600px;
+    height:auto;
+    z-index: 10;
+    left: 45vw;
+    top: 150px;
+    position: absolute;
+}
+
+.fight1 {
+    width: 240px;
+    height:auto;
+    z-index: 11;
+    left: 80vw;
+    top: 100px;
+    position: absolute;
+}
+
+.fight2 {
+    width: 250px;
+    height:auto;
+    z-index: 11;
+    left: 40vw;
+    top: 400px;
+    position: absolute;
+}
+
+.fight {
+    display: none;
+}
+
+.fighttext:hover {
+    background-color: #0B60AA;
+    color: white;
+}
+
+.fighttext:hover ~ .fight {
+    display: block;
+}
+
+/* official */
+
+.official {
+    width: 1200px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.off1 {
+    width: 100%;
+    height:auto;
+    z-index: 0;
+    top: 0;
+    mix-blend-mode: difference;
+}
+
+.off2 {
+    width: 800px;
+    height:auto;
+    left: 40vw;
+    top: 250px;
+    position: absolute;
+}
+
+.official {
+    display: none;
+}
+
+.official2 {
+    display:none;
+}
+
+.offtext:hover {
+    background-color: rgb(200, 134, 134);
+    color: white;
+}
+
+.offtext:hover ~ .official {
+    display: block;
+}
+
+.offtext:hover ~ .official2 {
+    display:block;
+}
+
+.omg {
+    font-family: "Exposure30";
+    font-weight: 397;
+    color: rgb(200, 134, 134);
+    font-size: 10rem;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    padding: 10px;
 }
 
 a:link{
