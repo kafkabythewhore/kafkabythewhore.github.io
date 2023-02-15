@@ -15,6 +15,19 @@ body {
     }
 }
 
+.pic {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    right: 130px;
+    bottom: 80px;
+}
+
+@font-face {
+    font-family: "Exposure30";
+    src: url("./font/ExposureTrial[-30].otf");
+}
+
 .media {
     font-family: "Exposure30";
     font-weight: 397;
@@ -22,11 +35,6 @@ body {
     display: none;
     position: absolute;
     top: 10px;
-}
-
-@font-face {
-    font-family: "Exposure30";
-    src: url("./font/ExposureTrial[-30].otf");
 }
 
 div {
