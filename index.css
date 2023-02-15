@@ -15,6 +15,11 @@ body {
     }
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .pic {
     position: absolute;
     width: 400px;
