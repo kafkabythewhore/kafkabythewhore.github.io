@@ -313,31 +313,12 @@ ul li {
 
 /* official */
 
-.official {
-    width: 1200px;
-    height: 100px;
-    overflow: hidden;
-    position: relative;
-}
-
-.off1 {
-    width: 100%;
-    height:auto;
-    z-index: 0;
-    top: 0;
-    mix-blend-mode: difference;
-}
-
 .off2 {
     width: 800px;
     height:auto;
     left: 40vw;
     top: 250px;
     position: absolute;
-}
-
-.official {
-    display: none;
 }
 
 .official2 {
@@ -347,10 +328,6 @@ ul li {
 .offtext:hover {
     background-color: rgb(200, 134, 134);
     color: white;
-}
-
-.offtext:hover ~ .official {
-    display: block;
 }
 
 .offtext:hover ~ .official2 {
@@ -366,6 +343,21 @@ ul li {
     top: 100px;
     text-align: center;
     padding: 10px;
+    animation: blink .5s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: rgb(200, 134, 134);
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    100% {
+        color: red;
+    }
 }
 
 a:link{
